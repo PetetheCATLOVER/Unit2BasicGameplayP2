@@ -1617,6 +1617,7 @@ GameObject:
   - component: {fileID: 6680433528718431200}
   - component: {fileID: 5956458437826489815}
   - component: {fileID: 798767622073981050}
+  - component: {fileID: 7965976046430777457}
   m_Layer: 0
   m_Name: puggers
   m_TagString: Untagged
@@ -1710,6 +1711,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &7965976046430777457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2711990324200052550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0d0ba189e9c024ebebf585ed338a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2989684442187127134
 GameObject:
   m_ObjectHideFlags: 0
