@@ -8,12 +8,14 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
-    public float zMin;
-    public float zMax;
-    public float verticalInput;
-    public Transform projectileSpawnPoint;
 
     public GameObject projectilePrefab;
+
+    public float zMin;
+    public float zMax;
+   public float verticalInput;
+    public Transform projectileSpawnPoint;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -47,11 +49,12 @@ public class PlayerController : MonoBehaviour
 
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
-
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // Launch a projectile from the player
-            Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawnPoint.position,
+            projectilePrefab.transform.rotation);
         }
+
     }
 }

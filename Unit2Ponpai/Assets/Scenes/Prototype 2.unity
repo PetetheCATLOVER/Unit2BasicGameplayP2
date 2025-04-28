@@ -311,7 +311,7 @@ Transform:
   m_GameObject: {fileID: 260616474}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 1.5}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -381,11 +381,11 @@ MonoBehaviour:
   horizontalInput: 0
   speed: 20
   xRange: 10
+  projectilePrefab: {fileID: 4907608198352960266, guid: ef8e205fb12225f438974a9ab67423c8, type: 3}
   zMin: -1.5
   zMax: 15.5
   verticalInput: 0
   projectileSpawnPoint: {fileID: 260616475}
-  projectilePrefab: {fileID: 4907608198352960266, guid: ef8e205fb12225f438974a9ab67423c8, type: 3}
 --- !u!54 &351345748
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -525,6 +525,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 674975193768097007, guid: ef8e205fb12225f438974a9ab67423c8, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1405317140233269821, guid: ef8e205fb12225f438974a9ab67423c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.647044
@@ -568,6 +572,10 @@ PrefabInstance:
     - target: {fileID: 4907608198352960266, guid: ef8e205fb12225f438974a9ab67423c8, type: 3}
       propertyPath: m_Name
       value: Food_Bone_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724182579829622364, guid: ef8e205fb12225f438974a9ab67423c8, type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -769,12 +777,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.14012708, y: 1, z: 0.637564}
+  m_Center: {x: -0.009192944, y: 0, z: 0.18121798}
 --- !u!1 &986265577 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2711990324200052550, guid: 709c2451f5784c0468df8b6f543f7b17, type: 3}
@@ -795,12 +803,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.48412752, y: 0.68838143, z: 0.3410388}
+  m_Center: {x: -0.032189038, y: -0.15580957, z: 0.036191225}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +895,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6676926025168147239, guid: fb59101e3a8b5f048a8950a78c0f1d69, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -954,6 +966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 798767622073981050, guid: 709c2451f5784c0468df8b6f543f7b17, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2711990324200052550, guid: 709c2451f5784c0468df8b6f543f7b17, type: 3}
       propertyPath: m_Name
       value: puggers
@@ -1155,7 +1171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604427825061112029, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
       propertyPath: m_Size.x
-      value: 0.3943866
+      value: 0.20471512
       objectReference: {fileID: 0}
     - target: {fileID: 6604427825061112029, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
       propertyPath: m_Size.y
@@ -1163,11 +1179,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604427825061112029, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
       propertyPath: m_Size.z
-      value: 0.43547264
+      value: 0.2651543
       objectReference: {fileID: 0}
     - target: {fileID: 6604427825061112029, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
       propertyPath: m_Center.x
-      value: 0.024190316
+      value: 0.029687645
       objectReference: {fileID: 0}
     - target: {fileID: 6604427825061112029, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
       propertyPath: m_Center.y
@@ -1175,7 +1191,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604427825061112029, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
       propertyPath: m_Center.z
-      value: 0.043626055
+      value: 0.03745315
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604427825061112029, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7662443754047616360, guid: c3840480ee8fe3d4e8dda537389b5563, type: 3}
+      propertyPath: speed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
